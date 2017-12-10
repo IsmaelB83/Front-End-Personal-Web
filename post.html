@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!-- Head -->
+<head>
+	<!-- Metas -->	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootsrap 3.3.0 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.0.css"> <!--Bootstrap v3.3.0-->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-treeview.min.css">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet" type="text/css">
+	<!-- Estilos propios-->
+	<link rel="stylesheet" type="text/css" href="css/blog.css">
+	<!-- Blog title--> 
+	<title>Django Blog v1 - Post</title>
+</head>
+
+<!-- Body -->
+<body class="_bgColor0">
+
+	<!-- Head -->
+	<header class="_bgColor1 _ftColor3">
+		<!-- Contenedor para centrar la cabecera -->
+		<div class="container">
+			<!-- Barra superior con brand y usuario -->
+			<div class="row">
+				<div class="hidden-xs col-xs-12 pull-left" >
+					<img class="_logoHeader" src="img/django_header.png"/>
+					<h1>My first Django Web</h1>
+				</div>
+			</div>
+			<!-- Barra de navegación inicial -->
+			<div class="row">
+				<nav class="navbar navbar-inverse _bgColor1" role="navigation">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="buton" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar" aria-expanded="false" aria-label="Menú de Navegación">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand hidden-sm hidden-md hidden-lg hidden-xl" href="#"><img src="img/brand_xs.png" width="200"></a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<!-- Menú izquierda: navegación por la web-->
+						<ul class="nav navbar-nav navbar-left">
+							<li><a class="_ftColor1" href="./home.html">Home</a></li>
+							<li><a href="./contact.html">About</a></li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
+								<ul class="dropdown-menu _bgColor1" role="menu">
+									<li><a class="_btnColor4" href="category.html">Programming </a></li>
+									<li><a class="_btnColor4" href="category.html">Raspberry PI</a></li>
+									<li><a class="_btnColor4" href="category.html">Linux</a></li>
+									<li><a class="_btnColor4" href="category.html">SAP</a></li>
+									<li><a class="_btnColor4" href="category.html">Otros</a></li>
+								</ul>
+							</li>
+							<li><a href="./archive.html">Archive</a></li>
+						</ul>
+						<!-- Menú derecha: búsqueda y inicio/cierre sesión-->					
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<form class="navbar-form navbar-left" role="search">
+									<div class="input-group form-group-sm">
+										<input type="text" class="form-control form-control-sm" placeholder="Search">
+										<div class="input-group-btn">
+											<button class="btn btn-sm _btnColor3" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+										</div>
+									</div>
+								</form>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown">
+									<span class="glyphicon glyphicon-user"></span>
+									<span> Isma</span>
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<div class="navbar-login col-xs-12 _pt-15 _pb-15">
+											<div class="col-xs-12 _pt-10 _pb-10">
+												<div class="col-xs-4 _pd-0 ">
+													<img src="./img/developer.png" class="_bgColor0 img-responsive img-rounded" width="100%">
+												</div>
+												<div class="col-xs-8 ">
+													<p class="text-left"><strong>Isma Developer</strong></p>
+													<p class="text-left small">ismaelbernal83@gmail.com</p>
+												</div>
+											</div>
+											<div class="col-xs-12 _pd-0">
+												<button class="btn btn-success btn-block btn-sm" href="#connectModal" data-toggle="modal" data-target="#connectModal">
+													<span class="glyphicon glyphicon-log-in"></span> Login
+												</button>
+												<button class="btn btn btn-primary btn-block btn-sm" href="#disconnectModal" data-toggle="modal" data-target="#disconnectModal">
+													<span class="glyphicon glyphicon-log-out"></span> Logout
+												</button>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<!-- Ventana modal iniciar sesion -->
+						<div class="modal fade" id="connectModal">
+							<div class="modal-dialog ">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+										<h2>Iniciar sesión</h2>
+									</div>
+									<div class="modal-body">
+										<form action="">
+											<div class="form-group">
+												<input class="form-control" type="text" name="username" id="user" placeholder="Username" autofocus required>
+											</div>
+											<div class="form-group">
+												<input class="form-control" type="password" name="passworrd" id="pass" placeholder="Password" required>
+											</div>
+											<div class="form-group">
+												<a href="#forgotPasswordModal" data-toggle="modal" data-target="#forgotPasswordModal" class="btn btn-info btn-block">Forgot password?</a>
+											</div>
+											<div class="checkbox">
+												<label><input type="checkbox" value="remember" id="remember">Remember me</label>
+											</div>
+											<div class="form-group form-group-inline" style="text-align: right;">
+												<button class="btn btn-success" type="submit">Login</button>
+												<a href="#" data-dismiss="modal" class="btn btn-primary">Cancelar</a>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Ventana modal cerrar sesion -->
+						<div class="modal fade" id="disconnectModal">
+							<div class="modal-dialog ">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+										<h2>Cerrar sesión</h2>
+									</div>
+									<div class="modal-body">
+										<p>¿Está seguro de que desea desconectar la sesión?</p>
+									</div>
+									<div class="modal-footer">
+										<button class="btn btn-success" type="submit">Desconectar</button>
+										<a href="#" data-dismiss="modal" class="btn btn-primary">Cancelar</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Ventana modal recordar password -->
+						<div class="modal fade" id="forgotPasswordModal">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+										<h2>Resetear password</h2>
+									</div>
+									<div class="modal-body">
+										<form action="">
+											<div class="form-group">
+												<input class="form-control" type="text" name="mailaddress" id="mailaddress" placeholder="Your email address..." autofocus required>
+												<input name="_csrf" id="token" type="hidden" value="aKcseI6i-FGe6_EmdBd2h-p2T3Wfol-Mrpd4">
+												<span class="help-block"><small>Enter the email address you used to sign-up.</small></span>
+											</div>
+											<div class="form-group" style="text-align: right;">
+												<button class="btn btn-success" type="submit">Reset Password</button>
+												<a href="#" data-dismiss="modal" class="btn btn-primary">Cancelar</a>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+	           			</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>		
+
+	<!-- Bloque principal -->
+	<main>
+		<div class="container _bgColor0">
+			<div class="row">
+				<!-- Contenido del post -->
+				<div class="col-xs-12 col-md-8 _mt-20 pull-left">
+					<article class="_previewXL">
+						<div class="_previewXL-Title">
+							<h3><a href="single.html">Making it look like readable English. Many desktop packages and web page</a></h3>
+							<span>By Kieth Deviec- 2 hours ago<a href="post.html"><span class="_previewXL-comments">8 Comments</span></a></span> 
+							<img class="img-responsive _mt-10" width="100%" src="http://raspipc.es/blog/wp-content/uploads/2016/12/mirror-installed-1-624x298.jpg">
+						</div><!-- .entry-header -->
+						<div class="_previewXL-Body">
+							<p>¿Cuántas horas podemos pasar delante de un <a href="http://www.expansion.com/directivos/estilo-vida/tendencias/2016/02/21/56ca17baca4741333d8b456b.html">espejo</a>? Seguro que ellas más tiempo que ellos, pero ¿y si pudiéramos conseguir que ese valioso tiempo que pasamos enfrente de nuestro reflejo lo pudiéramos aprovechar para echarle un vistazo al exterior?. Hoy día todo parece
+								más y más inteligente, ¿Por qué no dotamos a un objeto indispensable en todo hogar de inteligencia? Después de los smartphones y los smartwatches te puedes crear un <a href="http://www.makeuseof.com/tag/6-best-raspberry-pi-smart-mirror-projects-weve-seen-far/">smartmirror</a> tú mismo, con una raspberry pi y poco dinero. Aquí os dejo algún que otro <a href="https://www.youtube.com/watch?v=fkVBAcvbrjU&amp;t=634s">ejemplo</a> de varios makers que se han apuntado a la aventura de tener su propio smartmirror.</p>
+							<p>La idea es sencilla, reciclamos algún monitor o televisor plano que tengamos por casa y vamos a colocarle un espejo de doble cara o plexiglass con acabado espejo que es más ligero, le enchufamos nuestra <a href="http://www.raspipc.es/public/home/index.php?ver=tienda&amp;accion=verArticulo&amp;idProducto=1340">Raspberry Pi 3</a> previamente programada y con acceso a internet por wifi “et voilá” ya tenemos un smartmirror que nos puede informar desde la predicción del tiempo, la hora y alguna que otra noticia relevante del día o incluso hacer sonar nuestra emisora de radio favorita en streaming.</p>
+							<p><a href="http://raspipc.es/blog/wp-content/uploads/2016/12/monitor-installation.jpg"><img class=" wp-image-265 alignright" src="http://raspipc.es/blog/wp-content/uploads/2016/12/monitor-installation-300x150.jpg" alt="life" width="394" height="197" srcset="http://raspipc.es/blog/wp-content/uploads/2016/12/monitor-installation-300x150.jpg 300w, http://raspipc.es/blog/wp-content/uploads/2016/12/monitor-installation-768x384.jpg 768w, http://raspipc.es/blog/wp-content/uploads/2016/12/monitor-installation-1024x512.jpg 1024w, http://raspipc.es/blog/wp-content/uploads/2016/12/monitor-installation-624x312.jpg 624w" sizes="(max-width: 394px) 100vw, 394px"></a>Las posibilidades pueden ser miles a la hora de diseñar nuestro espejo inteligente. Podemos irnos a lo realmente barato, donde solo necesitaremos un soporte VESA para sujetar la TV o nuestro monitor y <a href="https://www.youtube.com/watch?v=PDIbhV8Nvq8">pegar directamente el cristal espejo de doble cara al marco</a>, o podemos hacer como os mostramos en el <a href="https://docs.smart-mirror.io/docs/hardware.html">ejemplo</a>, un marco de madera o cualquier otro material, que servirá de soporte para sujetar el televisor dotando a nuestro SmartMirror de mucha más presencia a la vez que le damos un aspecto más rústico.</p>
+							<p style="text-align: justify;">Varios makers han dado un paso más y con un micrófono han conseguido que el SmartMirror tenga <a href="https://www.youtube.com/watch?v=ejnE6DM-hqU">inteligencia artificial</a> y como si de un SIRI se tratara, mediante comandos de voz podremos conseguir toda la información que deseemos.</p>
+							<p style="text-align: justify;">Yo por lo pronto estoy deseando que los reyes magos hagan un plan renove de la televisión de mi casa para aprovechar mi vieja tele de 32”. La colocaré en la entrada de mi piso y así echar un vistazo al tiempo antes de salir a la calle a la vez que me retoco el cuello de la camisa o el flequillo. ¿Donde colocariais vuestra smartmirror?</p>
+						</div><!-- .entry-content -->
+						<div class="_previewXL-Footer">
+							<span>By Kieth Deviec- 2 hours ago<a href="post.html"><span class="_previewXL-comments">8 Comments</span></a></span><br>
+							<div class="_mt-5">
+								<span class="label label-info">programming</span>
+								<span class="label label-primary">linux</span>
+								<span class="label label-success">raspberry pi</span>
+							</div>
+						</div>
+						<div class="dejarcomentario col-xs-12 _pl-0 _pr-0 _mt-10">
+							<h3>Dejar comentario</h3>
+							<form action="">
+								<div class="form-group">
+									<input class="form-control" type="text" name="name" id="name" placeholder="Your name here" required maxlength="30">
+								</div>
+								<div class="form-group">
+									<input class="form-control" type="text" name="email" id="email" placeholder="Your email here" required maxlength="40" is-invalid>
+								</div>
+								<div class="form-group _mb-5">
+									<textarea class="form-control _aboutMessage" name="message" id="message" placeholder="Enter your message..." required maxlength=400></textarea>
+									<small class="form-text text-muted">Max. 400 characters</small>
+								</div>
+								<div class="form-group pull-right _mt-0">
+									<button type="button" class="btn _btnColor1 submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Comment</button>
+								</div>
+							</form>
+						</div>
+						<span class="_previewXL-comments">3 Comments</span>
+						<div class="media col-xs-12 _pl-0 _pr-0">
+							<div class="col-xs-1 _pl-0 _pr-0">
+								<img src="img/persona1.jpg" width="100%" class="img-responsive" alt="">
+							</div>
+							<div class="media-body col-xs-11 _pr-0">
+								<p class="nombre">Jhon Doe <span>7:51pm, Hoy</span></p>
+								<p class="comentario">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						</div>
+						<div class="media col-xs-12 _pl-0 _pr-0">
+							<div class="col-xs-1 _pl-0 _pr-0">
+								<img src="img/persona2.jpg" width="100%" class="img-responsive" alt="">
+							</div>
+							<div class="media-body col-xs-11 _pr-0">
+								<p class="nombre">Pepiño <span>8:51pm, Hoy</span></p>
+								<p class="comentario">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						</div>
+						<div class="media col-xs-12 _pl-0 _pr-0">
+							<div class="col-xs-1 _pl-0 _pr-0">
+								<img src="img/persona3.jpg" width="100%" class="img-responsive" alt="">
+							</div>
+							<div class="media-body col-xs-11 _pr-0">
+								<p class="nombre">Alex <span>9:21pm, Hoy</span></p>
+								<p class="comentario">
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+									tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+									quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+									consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+									cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+									proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</p>
+							</div>
+						</div>
+					</article>
+				</div>
+				<!-- Sidebar derecha-->
+				<div class="col-xs-12 col-md-4 _pl-sm-30 pull-right">
+					<!-- Categorias-->
+					<div class="col-xs-12 _mt-20 _pl-0 _pr-0">
+						<h2 class="_titleSection">CATEGORIES</h2>
+						<div class="panel-group" id="accordion">
+							<div class="panel">
+								<button class="categories _btnColor2 _pd-18 _w-100 _ft-15">Programing</button>
+							</div>
+							<div class="panel">
+								<button class="categories _btnColor2 _pd-18 _w-100 _ft-15">Raspberry PI</button>
+							</div>
+							<div class="panel">
+								<button class="categories _btnColor2 _pd-18 _w-100 _ft-15">Linux</button>
+							</div>
+							<div class="panel">
+								<button class="categories _btnColor2 _pd-18 _w-100 _ft-15">SAP</button>
+							</div>
+							<div class="panel">
+								<button class="categories _btnColor2 _pd-18 _w-100 _ft-15">Otros</button>
+							</div> 
+						</div>
+					</div>
+					<!-- Posts relacionados-->
+					<div class="col-xs-12 _mt-20 _pl-0 _pr-0">
+						<h2 class="_titleSection">RELATED POSTS</h2>
+						<div class="_previewXSGroup">
+							<div class="_previewXS">
+								<img src="img/img1.jpg" alt="thumbnail" class="img-rounded">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit ipsum dolor sit amet
+									<a href="post.html">[...]</a>
+								</p>
+							</div>
+							<div class="_previewXS">
+								<img src="img/img1.jpg" alt="thumbnail" class="img-rounded">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit ipsum dolor sit amet
+									<a href="post.html">[...]</a>
+								</p>
+							</div>
+							<div class="_previewXS">
+								<img src="img/img1.jpg" alt="thumbnail" class="img-rounded">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit ipsum dolor sit amet
+									<a href="post.html">[...]</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Related pictures -->
+					<div class="col-xs-12 _mt-20 _pl-0 _pr-0">
+						<h2 class="_titleSection">RELATED PICTURES</h2>
+						<div class="_lastPictures">
+							<div class="_lastPicturesRow">
+								<div class="_lastPicturesImage images_1_of_4"> <a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+								<div class="_lastPicturesImage images_1_of_4">
+									<a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+								<div class="_lastPicturesImage images_1_of_4">
+									<a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+								<div class="_lastPicturesImage images_1_of_4">
+									<a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+							</div>
+							<div class="_lastPicturesRow">
+								<div class="_lastPicturesImage images_1_of_4">
+									<a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+								<div class="_lastPicturesImage images_1_of_4">
+									<a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+								<div class="_lastPicturesImage images_1_of_4">
+									<a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+								<div class="_lastPicturesImage images_1_of_4">
+									<a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+							</div>						
+							<div class="_lastPicturesRow">
+								<div class="_lastPicturesImage images_1_of_4">
+									<a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+								<div class="_lastPicturesImage images_1_of_4">
+									<a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+								<div class="_lastPicturesImage images_1_of_4">
+									<a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+								<div class="_lastPicturesImage images_1_of_4">
+									<a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+							</div>
+						</div>		
+						</div>					
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="_bgColor1 _ftColor0T">
+		<!-- Barra superior y de share - Solo visible con varnab completa -->
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-lg-5 right-border _pr-sm-20">
+					<div class="footer-about">
+						<div class="col-xs-12 _pl-0 _pr-0">
+							<h2 class="footer-title">About Me</h2>
+							<p class="_textJustify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+						</div>
+						<div class="single col-xs-12 _pl-0 _pr-0 _mt-5">
+							<h6>Desarrollado por:
+								<p class="_ml-10 _mt-5">
+									<i class="fa fa-envelope"></i>
+									<a href="#" title="">Ismael</a> - info@example.com
+								</p>
+							</h6>					
+						</div>
+						<div class="single col-xs-12 col-sm-5 _pl-0 _pr-0 _mt-5">
+							<h6>Follow:</h6>
+							<ul class="list-inline _mt-5">
+								<li class="list-inline-item"><a class="btn btn-social-icon btn-lg btn-twitter" href="http://www.twitter.com"><span class="fa fa-twitter"></span></a></li>
+								<li class="list-inline-item"><a class="btn btn-social-icon btn-lg btn-github" href="http://www.github.com"><span class="fa fa-github"></span></a></li>
+							</ul>
+						</div>
+						<div class="single col-xs-12 col-sm-7 _pl-0 _pr-0 _mt-5">
+							<h6>Share:</h6>
+							<ul class="list-inline _mt-5">
+								<li class="list-inline-item"><a class="btn btn-social-icon btn-lg btn-twitter" href="http://www.twitter.com"><span class="fa fa-twitter"></span></a></li>
+								<li class="list-inline-item"><a class="btn btn-social-icon btn-lg btn-facebook" href="http://www.facebook.com"><span class="fa fa-facebook"></span></a></li>
+								<li class="list-inline-item"><a class="btn btn-social-icon btn-lg btn-linkedin" href="http://www.linkedin.com"><span class="fa fa-linkedin"></span></a></li>
+								<li class="list-inline-item"><a class="btn btn-social-icon btn-lg btn-instagram" href="http://www.linkedin.com"><span class="fa fa-instagram"></span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-lg-3 right-border _pl-sm-20 _pr-sm-20">
+					<div class="footer-about">
+						<div class="col-xs-12 _pl-0 _pr-0">
+							<h2 class="footer-title">Powered By</h2>
+							<div id="powered" class="footer-powered">
+								<img src="img/HTML5.png" class="img-rounded" alt="powered_by">
+								<img src="img/css3.png" class="img-rounded" alt="powered_by">
+								<img src="img/bootstrap3.png" class="img-rounded" alt="powered_by">
+								<img src="img/python.jpg" class="img-rounded" alt="powered_by">
+								<img src="img/django.png" class="img-rounded" alt="powered_by">
+							</div>
+						</div>
+						<div class="col-xs-12 _pl-0 _pr-0">
+							<div class="navigation">
+								<h2 class="footer-title">Navigation</h2>
+								<ul class="list-unstyled">
+									<li><a href="./home.html" title="">Home</a></li>
+									<li><a href="./contact.html" title="">Contact</a></li>
+									<li><a href="./categories.html" title="">Categories</a></li>
+									<li><a href="./archive.html" title="">Archive</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-lg-4 _pl-sm-20">
+					<div class="footer-about">
+						<div class="col-xs-12 _pb-20 _pl-0 _pr-0">
+							<h2 class="footer-title">Newsletter</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p>
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+								<input id="email" type="text" class="form-control" name="email" placeholder="Email">
+							</div>
+							<button type="button" class="btn _btnColor3 _mt-15 _noRadious">Subscribe</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+	<!-- JQuery y Bootstrap -->
+	<script src="js/jquery-1.11.1.js"></script>
+	<script src="js/bootstrap-3.3.0.js"></script>
+	<script src="js/bootstrap-treeview.js"></script>
+	<!-- My scripts -->
+	<script type="text/javascript">
+		jQuery(window).resize(function() {
+   			var divWidth = $('#powered').width(); 
+    		$('#powered').css('height', divWidth/6);
+		}); 
+		
+		$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip(); 
+		});
+
+		jQuery(document).ready(function() {
+		
+			var divWidth = $('#powered').width(); 
+    		$('#powered').css('height', divWidth/6);
+
+			function close_accordion_section() {
+				jQuery('.accordion').removeClass('active');
+			}
+
+			jQuery('.accordion').click(function(e) {
+				// Grab current anchor value
+				var currentAttrValue = jQuery(this).attr('href');
+
+				if(jQuery(e.target).is('.active')) {
+					close_accordion_section();
+				}else {
+					close_accordion_section();
+					// Add active class to section title
+					jQuery(this).addClass('active');
+				}
+				e.preventDefault();
+			});
+		});
+	</script>
+
+</body>
+</html>

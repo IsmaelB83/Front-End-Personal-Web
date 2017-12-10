@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+	<!-- Metas -->	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootsrap 3.3.0 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.0.css"> <!--Bootstrap v3.3.0-->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	<!-- Estilos propios-->
+	<link rel="stylesheet" type="text/css" href="css/blog.css">
+	<!-- Blog title--> 
+	<title>Django Blog v1 - Contact</title>
+</head>
+
+<!-- Body -->
+<body class="_bgColor0">
+
+	<!-- Head -->
+	<header class="_bgColor1 _ftColor3">
+		<!-- Contenedor para centrar la cabecera -->
+		<div class="container">
+			<!-- Barra superior con brand y usuario -->
+			<div class="row">
+				<div class="hidden-xs col-xs-12 pull-left" >
+					<img class="_logoHeader" src="img/django_header.png"/>
+					<h1>My first Django Web</h1>
+				</div>
+			</div>
+			<!-- Barra de navegación inicial -->
+			<div class="row">
+				<nav class="navbar navbar-inverse _bgColor1" role="navigation">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="buton" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar" aria-expanded="false" aria-label="Menú de Navegación">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand hidden-sm hidden-md hidden-lg hidden-xl" href="#"><img src="img/brand_xs.png" width="200"></a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<!-- Menú izquierda: navegación por la web-->
+						<ul class="nav navbar-nav navbar-left">
+							<li><a class="_ftColor1" href="./home.html">Home</a></li>
+							<li class="active"><a href="./contact.html">About</a></li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
+								<ul class="dropdown-menu _bgColor1" role="menu">
+									<li><a class="_btnColor4" href="category.html">Programming</a></li>
+									<li><a class="_btnColor4" href="category.html">Raspberry PI</a></li>
+									<li><a class="_btnColor4" href="category.html">Linux</a></li>
+									<li><a class="_btnColor4" href="category.html">SAP</a></li>
+									<li><a class="_btnColor4" href="category.html">Otros</a></li>
+								</ul>
+							</li>
+							<li><a href="./archive.html">Archive</a></li>
+						</ul>
+						<!-- Menú derecha: búsqueda y inicio/cierre sesión-->					
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<form class="navbar-form navbar-left" role="search">
+									<div class="input-group form-group-sm">
+										<input type="text" class="form-control form-control-sm" placeholder="Search">
+										<div class="input-group-btn">
+											<button class="btn btn-sm _btnColor3" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+										</div>
+									</div>
+								</form>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown">
+									<span class="glyphicon glyphicon-user"></span>
+									<span> Isma</span>
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu">
+									<li>
+										<div class="navbar-login col-xs-12 _pt-15 _pb-15">
+											<div class="col-xs-12 _pt-10 _pb-10">
+												<div class="col-xs-4 _pd-0 ">
+													<img src="./img/developer.png" class="_bgColor0 img-responsive img-rounded" width="100%">
+												</div>
+												<div class="col-xs-8 ">
+													<p class="text-left"><strong>Isma Developer</strong></p>
+													<p class="text-left small">ismaelbernal83@gmail.com</p>
+												</div>
+											</div>
+											<div class="col-xs-12 _pd-0">
+												<button class="btn btn-success btn-block btn-sm" href="#connectModal" data-toggle="modal" data-target="#connectModal">
+													<span class="glyphicon glyphicon-log-in"></span> Login
+												</button>
+												<button class="btn btn btn-primary btn-block btn-sm" href="#disconnectModal" data-toggle="modal" data-target="#disconnectModal">
+													<span class="glyphicon glyphicon-log-out"></span> Logout
+												</button>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<!-- Ventana modal iniciar sesion -->
+						<div class="modal fade" id="connectModal">
+							<div class="modal-dialog ">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+										<h2>Iniciar sesión</h2>
+									</div>
+									<div class="modal-body">
+										<form action="">
+											<div class="form-group">
+												<input class="form-control" type="text" name="username" id="user" placeholder="Username" autofocus required>
+											</div>
+											<div class="form-group">
+												<input class="form-control" type="password" name="passworrd" id="pass" placeholder="Password" required>
+											</div>
+											<div class="form-group">
+												<a href="#forgotPasswordModal" data-toggle="modal" data-target="#forgotPasswordModal" class="btn btn-info btn-block">Forgot password?</a>
+											</div>
+											<div class="checkbox">
+												<label><input type="checkbox" value="remember" id="remember">Remember me</label>
+											</div>
+											<div class="form-group form-group-inline" style="text-align: right;">
+												<button class="btn btn-success" type="submit">Login</button>
+												<a href="#" data-dismiss="modal" class="btn btn-primary">Cancelar</a>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Ventana modal cerrar sesion -->
+						<div class="modal fade" id="disconnectModal">
+							<div class="modal-dialog ">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+										<h2>Cerrar sesión</h2>
+									</div>
+									<div class="modal-body">
+										<p>¿Está seguro de que desea desconectar la sesión?</p>
+									</div>
+									<div class="modal-footer">
+										<button class="btn btn-success" type="submit">Desconectar</button>
+										<a href="#" data-dismiss="modal" class="btn btn-primary">Cancelar</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Ventana modal recordar password -->
+						<div class="modal fade" id="forgotPasswordModal">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+										<h2>Resetear password</h2>
+									</div>
+									<div class="modal-body">
+										<form action="">
+											<div class="form-group">
+												<input class="form-control" type="text" name="mailaddress" id="mailaddress" placeholder="Your email address..." autofocus required>
+												<input name="_csrf" id="token" type="hidden" value="aKcseI6i-FGe6_EmdBd2h-p2T3Wfol-Mrpd4">
+												<span class="help-block"><small>Enter the email address you used to sign-up.</small></span>
+											</div>
+											<div class="form-group" style="text-align: right;">
+												<button class="btn btn-success" type="submit">Reset Password</button>
+												<a href="#" data-dismiss="modal" class="btn btn-primary">Cancelar</a>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+	           			</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>		
+
+	<!-- Bloque principal -->
+	<main>
+		<!-- Bloque principal -->
+		<div class="jumbotron">
+			<div class="img"></div>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-md-6 col-md-offset-3">
+						<h1>About me</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container _bgColor0">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 _mt-30 _pr-sm-20">
+					<h2 class="_titleSection">ACERCA DE</h2>
+					<div class="col-xs-12 info _pl-0 _pr-0">
+						<p class="_aboutText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae ipsam nostrum rem repudiandae suscipit
+						minus repellendus quod explicabo omnis, consequatur, illo voluptatem in blanditiis voluptas reprehenderit.
+						Magni perferendis et fugit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae ipsam nostrum rem repudiandae suscipit
+						minus repellendus quod explicabo omnis, consequatur, illo voluptatem in blanditiis voluptas reprehenderit.
+						Magni perferendis et fugit!</p>
+					</div>
+					<div class="col-xs-12 col-sm-3 pull-left _pl-0 _pr-0 _mt-20" style="text-align: center;">
+						<img src="img/developer.png" class="img-responsive img-rounded" alt="" width="100%">
+						<p class="_aboutText">Ismael</p>
+					</div>
+					<div class="col-xs-12 col-sm-8 pull-right _pl-0 _pr-0 _mt-20">
+						<p class="_aboutConocimiento">HTML, CSS, JS</p>
+						<div class="progress">
+							<div class="progress-bar" style="width: 35%;">35% (newbie)</div>
+						</div>
+
+						<p class="_aboutConocimiento">Backend</p>
+						<div class="progress">
+							<div class="progress-bar" style="width: 50%;">50% (newbie)</div>
+						</div>
+
+						<p class="_aboutConocimiento">SAP</p>
+						<div class="progress">
+							<div class="progress-bar" style="width: 95%;">95% (experienced)</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-6 _mt-30 _pl-sm-20">
+					<h2 class="_titleSection">CONTACT</h2>
+					<form action="">
+						<div class="form-group">
+							<label for="name">Your name</label>
+							<input class="form-control" type="text" name="name" id="name" placeholder="Your name here" required maxlength="30">
+						</div>
+						<div class="form-group">
+							<label for="email">Email Address</label>
+							<input class="form-control" type="text" name="email" id="email" placeholder="Enter email id" required maxlength="40" is-invalid>
+						</div>
+						<div class="form-group">
+							<label for="mobile">Mobile No.</label>
+							<input class="form-control" type="text" name="mobile" id="mobile" placeholder="Country code + Mobile number" maxlength="10">
+						</div>
+						<div class="form-group _mb-5">
+							<label for="message">Message</label>
+							<textarea class="form-control _aboutMessage" name="message" id="message" placeholder="Enter your message" required maxlength=400></textarea>
+							<small class="form-text text-muted">Max. 400 characters</small>
+						</div>
+						<div class="form-group pull-right _mt-0">
+							<button type="button" class="btn _btnColor1 submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="_bgColor1 _ftColor0T">
+		<!-- Barra superior y de share - Solo visible con varnab completa -->
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-lg-5 right-border _pr-sm-20">
+					<div class="footer-about">
+						<div class="col-xs-12 _pl-0 _pr-0">
+							<h2 class="footer-title">About Me</h2>
+							<p class="_textJustify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+						</div>
+						<div class="single col-xs-12 _pl-0 _pr-0 _mt-5">
+							<h6>Desarrollado por:
+								<p class="_ml-10 _mt-5">
+									<i class="fa fa-envelope"></i>
+									<a href="#" title="">Ismael</a> - info@example.com
+								</p>
+							</h6>					
+						</div>
+						<div class="single col-xs-12 col-sm-5 _pl-0 _pr-0 _mt-5">
+							<h6>Follow:</h6>
+							<ul class="list-inline _mt-5">
+								<li class="list-inline-item"><a class="btn btn-social-icon btn-lg btn-twitter" href="http://www.twitter.com"><span class="fa fa-twitter"></span></a></li>
+								<li class="list-inline-item"><a class="btn btn-social-icon btn-lg btn-github" href="http://www.github.com"><span class="fa fa-github"></span></a></li>
+							</ul>
+						</div>
+						<div class="single col-xs-12 col-sm-7 _pl-0 _pr-0 _mt-5">
+							<h6>Share:</h6>
+							<ul class="list-inline _mt-5">
+								<li class="list-inline-item"><a class="btn btn-social-icon btn-lg btn-twitter" href="http://www.twitter.com"><span class="fa fa-twitter"></span></a></li>
+								<li class="list-inline-item"><a class="btn btn-social-icon btn-lg btn-facebook" href="http://www.facebook.com"><span class="fa fa-facebook"></span></a></li>
+								<li class="list-inline-item"><a class="btn btn-social-icon btn-lg btn-linkedin" href="http://www.linkedin.com"><span class="fa fa-linkedin"></span></a></li>
+								<li class="list-inline-item"><a class="btn btn-social-icon btn-lg btn-instagram" href="http://www.linkedin.com"><span class="fa fa-instagram"></span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-lg-3 right-border _pl-sm-20 _pr-sm-20">
+					<div class="footer-about">
+						<div class="col-xs-12 _pl-0 _pr-0">
+							<h2 class="footer-title">Powered By</h2>
+							<div id="powered" class="footer-powered">
+								<img src="img/HTML5.png" class="img-rounded" alt="powered_by">
+								<img src="img/css3.png" class="img-rounded" alt="powered_by">
+								<img src="img/bootstrap3.png" class="img-rounded" alt="powered_by">
+								<img src="img/python.jpg" class="img-rounded" alt="powered_by">
+								<img src="img/django.png" class="img-rounded" alt="powered_by">
+							</div>
+						</div>
+						<div class="col-xs-12 _pl-0 _pr-0">
+							<div class="navigation">
+								<h2 class="footer-title">Navigation</h2>
+								<ul class="list-unstyled">
+									<li><a href="./home.html" title="">Home</a></li>
+									<li><a href="./contact.html" title="">Contact</a></li>
+									<li><a href="./categories.html" title="">Categories</a></li>
+									<li><a href="./archive.html" title="">Archive</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-lg-4 _pl-sm-20">
+					<div class="footer-about">
+						<div class="col-xs-12 _pb-20 _pl-0 _pr-0">
+							<h2 class="footer-title">Newsletter</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p>
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+								<input id="email" type="text" class="form-control" name="email" placeholder="Email">
+							</div>
+							<button type="button" class="btn _btnColor3 _mt-15 _noRadious">Subscribe</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+	<!-- JQuery y Bootstrap -->
+	<script src="js/jquery-1.11.1.js"></script>
+	<script src="js/bootstrap-3.3.0.js"></script>
+	<!-- My scripts -->
+	<script>
+		jQuery(window).resize(function() {
+   			var divWidth = $('#powered').width(); 
+    		$('#powered').css('height', divWidth/6);
+		}); 
+		
+		$(document).ready(function(){
+			$('[data-toggle="tooltip"]').tooltip(); 
+			var divWidth = $('#powered').width();
+			$('#powered').css('height', divWidth/6);
+		});
+		
+		var acc = document.getElementsByClassName("accordion");
+		var i;
+		for (i = 0; i < acc.length; i++) {
+			acc[i].onclick = function() {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.maxHeight){
+					panel.style.maxHeight = null;
+				} else {
+					panel.style.maxHeight = panel.scrollHeight + "px";
+				} 
+			}
+		}
+
+		$('.carousel-indicators  li').on('mouseover',function() {
+			$(this).trigger('click');
+		})
+	</script>
+</body>
+</html>

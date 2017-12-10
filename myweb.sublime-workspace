@@ -1,0 +1,618 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"text-",
+				"text-center \tBootstrap 3 Class"
+			],
+			[
+				"pull",
+				"pull-left \tBootstrap 3 Class"
+			],
+			[
+				"hei",
+				"height"
+			],
+			[
+				"border",
+				"border-color"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"paddin",
+				"padding-bottom"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"padi",
+				"padding-bottom"
+			],
+			[
+				"img-r",
+				"img-rounded \tBootstrap 3 Class"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"padd",
+				"padding-bottom"
+			],
+			[
+				"d-in",
+				"d-inline-block \tBootstrap 4 Class"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"text-al",
+				"text-align"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"d-lb",
+				"d-inline-block \tBootstrap 4 Class"
+			],
+			[
+				"border-ra",
+				"border-top-left-radius"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"text",
+				"text-center \tBootstrap 4 Class"
+			],
+			[
+				"pr-4",
+				"pr-4 \tBootstrap 4 Class"
+			],
+			[
+				"border-",
+				"border-bottom"
+			],
+			[
+				"btn",
+				"button\t<button>"
+			],
+			[
+				"fotn",
+				"font-weight"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"tab",
+				"tabindex\tAttr"
+			],
+			[
+				"re",
+				"required\tAttr"
+			],
+			[
+				"auto",
+				"autofocus\tAttr"
+			],
+			[
+				"paddig",
+				"padding-top"
+			],
+			[
+				"if",
+				"ife\tif … else"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"hidd",
+				"hidden-md"
+			],
+			[
+				"hid",
+				"hidden-sm"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"pu",
+				"pull-right"
+			],
+			[
+				"paddin-",
+				"padding-left"
+			],
+			[
+				"alig",
+				"text-align"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"im",
+				"img-responsive"
+			],
+			[
+				"min",
+				"min-height"
+			],
+			[
+				"hidden-",
+				"hidden-sm"
+			],
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"marg",
+				"margin"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"bl",
+				"black"
+			],
+			[
+				"drop",
+				"dropdown"
+			],
+			[
+				"collap",
+				"collapse"
+			],
+			[
+				"collapse",
+				"collapse1"
+			],
+			[
+				"font-s",
+				"font-size"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 470.0,
+		"last_filter": "inde",
+		"selected_items":
+		[
+			[
+				"inde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Install Package Control"
+			],
+			[
+				"iden",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"indentation",
+				"Indentation: Reindent Lines"
+			]
+		],
+		"width": 563.0
+	},
+	"console":
+	{
+		"height": 163.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/trama/Desktop/workspace/myweb",
+		"/home/trama/Desktop/workspace/myweb/css"
+	],
+	"file_history":
+	[
+		"/home/trama/Desktop/workspace/myweb/post.html",
+		"/home/trama/Desktop/workspace/myweb/css/blog.css",
+		"/home/trama/Desktop/workspace/myweb/contact.html",
+		"/home/trama/Desktop/workspace/myweb/category.html",
+		"/home/trama/Desktop/workspace/myweb/archive.html",
+		"/home/trama/Desktop/workspace/myweb/home.html",
+		"/home/trama/Desktop/workspace/bootstrap/practicas/comentarios/index.html",
+		"/home/trama/Desktop/workspace/bootstrap/practicas/comentarios/css/estilos.css",
+		"/home/trama/Desktop/workspace/myweb/backup/10122017/css/blog.css",
+		"/home/trama/Desktop/Workspace/myweb/archive.html",
+		"/home/trama/Desktop/Workspace/myweb/home.html",
+		"/home/trama/Desktop/Workspace/myweb/css/estilos.css",
+		"/home/trama/Desktop/Workspace/myweb/css/blog.css",
+		"/home/trama/Desktop/Workspace/myweb/contact.html",
+		"/home/trama/Desktop/Workspace/myweb/category.html",
+		"/home/trama/Desktop/Workspace/bootstrap/practicas/portafolio/css/estilos.css",
+		"/home/trama/Desktop/Workspace/myweb/css/bootstrap-3.3.0.css",
+		"/home/trama/Desktop/Workspace/bootstrap/cards2.html",
+		"/home/trama/Desktop/Workspace/myweb/css/font-awesome.css",
+		"/home/trama/Desktop/Workspace/bootstrap/grid/ordenamiento_columnas.html",
+		"/home/trama/Downloads/Accordion Tutorial Files - IP/index.html",
+		"/home/trama/Desktop/Workspace/python/DjangoWeb/src/templates/post_list.html",
+		"/home/trama/Desktop/Workspace/myweb/login.html",
+		"/home/trama/Desktop/Workspace/bootstrap/formularios/validation_styles.html",
+		"/home/trama/Desktop/Workspace/bootstrap/css/bootstrap.css",
+		"/home/trama/Desktop/Workspace/bootstrap/css/bootstrap.min.css",
+		"/home/trama/Desktop/Workspace/bootstrap/practicas/comentarios/index.html",
+		"/home/trama/Desktop/Workspace/bootstrap/formularios/cuadros_ayuda.html",
+		"/home/trama/Desktop/Workspace/bootstrap/practicas/comentarios/css/estilos.css",
+		"/home/trama/Desktop/Workspace/myweb/main.html",
+		"/home/trama/Desktop/Workspace/bootstrap/formularios/formularios.html",
+		"/home/trama/Desktop/Workspace/bootstrap/formularios/variantes_input.html",
+		"/home/trama/Desktop/Workspace/bootstrap/05-formularios/3-grid-formularios.html",
+		"/home/trama/Desktop/Workspace/bootstrap/05-formularios/4-checkbox-radiobuttons.html",
+		"/home/trama/Desktop/Workspace/bootstrap/05-formularios/1-formularios.html",
+		"/home/trama/Desktop/Workspace/bootstrap/05-formularios/2-inline-forms.html",
+		"/home/trama/Desktop/Workspace/bootstrap/myweb/css/blog.css",
+		"/home/trama/Desktop/Workspace/bootstrap/myweb/blog_and_post.html",
+		"/home/trama/Desktop/Workspace/bootstrap/myweb/css/bootstrap-3.3.0.css",
+		"/home/trama/Desktop/Workspace/bootstrap/myweb/css/bootstrap.css",
+		"/home/trama/Desktop/Workspace/bootstrap/myweb/css/font-awesome.css",
+		"/home/trama/Desktop/Workspace/bootstrap/myweb/css/bootstrap-social.css",
+		"/home/trama/Desktop/Workspace/bootstrap/myweb/js/npm.js",
+		"/home/trama/Desktop/Workspace/bootstrap/myweb/bootstrap.js",
+		"/home/trama/Desktop/Workspace/bootstrap/myweb/js/jquery-1.11.1.js",
+		"/home/trama/Desktop/Workspace/bootstrap/myweb/js/bootstrap.js",
+		"/home/trama/Desktop/Workspace/bootstrap/myweb/css/font-awesome.min.css",
+		"/home/trama/Desktop/Share _AddToAny Sharing Plugin for WordPress_ - AddToAny_files/main.13.min.css",
+		"/home/trama/Desktop/Share _AddToAny Sharing Plugin for WordPress_ - AddToAny_files/index.7.min.css",
+		"/home/trama/Desktop/Share _AddToAny Sharing Plugin for WordPress_ - AddToAny_files/icons.23.svg.css",
+		"/home/trama/Desktop/Workspace/bootstrap/00-codigo-y-recursos/grid/columnas_alineadas_horizontalmente.html",
+		"/home/trama/Desktop/Workspace/bootstrap/00-codigo-y-recursos/grid/grid.html",
+		"/home/trama/Desktop/Workspace/bootstrap/00-codigo-y-recursos/grid/columnas_automaticas.html",
+		"/home/trama/Desktop/Workspace/bootstrap/00-codigo-y-recursos/grid/columnas_alineadas_verticalmente.html",
+		"/home/trama/Desktop/Workspace/bootstrap/00-codigo-y-recursos/grid/columnas_anidadas.html",
+		"/home/trama/Desktop/Workspace/bootstrap/00-codigo-y-recursos/grid/offseting.html",
+		"/home/trama/Desktop/Workspace/bootstrap/myweb/bootstrap.min.css",
+		"/home/trama/Desktop/Workspace/bootstrap/myweb/blog.css",
+		"/home/trama/Desktop/Workspace/bootstrap/myweb/base.html",
+		"/home/trama/Desktop/Workspace/bootstrap/04-componentes/11-dropdownbuttons.html",
+		"/home/trama/Desktop/Workspace/bootstrap/04-componentes/10-collapse.html",
+		"/home/trama/Desktop/Workspace/bootstrap/04-componentes/9-carousel.html",
+		"/run/user/1000/gvfs/mtp:host=%5Busb%3A001%2C006%5D/Tarjeta SD/bootstrap/9-carousel.html",
+		"/home/trama/Desktop/Workspace/bootstrap/00-codigo-y-recursos/carousel.html",
+		"/home/trama/Desktop/Workspace/bootstrap/04-componentes/8-masonry-cards.html",
+		"/home/trama/Desktop/Workspace/bootstrap/04-componentes/7-cards2.html",
+		"/home/trama/Desktop/Workspace/bootstrap/00-codigo-y-recursos/cards.html",
+		"/home/trama/Desktop/Workspace/bootstrap/04-componentes/6-cards.html",
+		"/home/trama/Desktop/Workspace/bootstrap/04-componentes/5-grupo-botones.html",
+		"/home/trama/Desktop/Workspace/bootstrap/04-componentes/3-botones.html",
+		"/home/trama/Desktop/Workspace/bootstrap/04-componentes/4-botones2.html",
+		"/home/trama/Desktop/Workspace/bootstrap/04-componentes/2-badges-insignias.html",
+		"/home/trama/Desktop/Workspace/bootstrap/4-componentes/1-alerts.html"
+	],
+	"find":
+	{
+		"height": 44.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"display: block",
+			"d-block",
+			" _boxDebug",
+			"_boxDebug",
+			" _boxDegug",
+			"footer",
+			"single",
+			"_boxDegug",
+			" _boxDebug",
+			"panel",
+			"categories",
+			" _pl-sm-30",
+			" _pr-sm-30",
+			" _pl-sm-30",
+			" _pr-sm-30",
+			" _pl-sm-30",
+			" _pl-sm-20",
+			" _pr-sm-20",
+			" _pl-sm-20",
+			"_pl-sm-20",
+			"TITLE",
+			"<!-- Related pictures -->\n\t\t\t\t\t<div class=\"col-xs-12 _mt-20\">\n\t\t\t\t\t\t<h2 class=\"_titleSection\">RELATED PICTURES</h2>\n\t\t\t\t\t\t<div class=\"_lastPictures\">\n\t\t\t\t\t\t\t<div class=\"_lastPicturesRow\">\n\t\t\t\t\t\t\t\t<div class=\"_lastPicturesImage images_1_of_4\"> <a href=\"post.html\" title=\"Image Title\"><img src=\"img/img1.jpg\" alt=\"\" class=\"img-responsive img-rounded\"></a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"_lastPicturesImage images_1_of_4\">\n\t\t\t\t\t\t\t\t\t<a href=\"post.html\" title=\"Image Title\"><img src=\"img/img1.jpg\" alt=\"\" class=\"img-responsive img-rounded\"></a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"_lastPicturesImage images_1_of_4\">\n\t\t\t\t\t\t\t\t\t<a href=\"post.html\" title=\"Image Title\"><img src=\"img/img1.jpg\" alt=\"\" class=\"img-responsive img-rounded\"></a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"_lastPicturesImage images_1_of_4\">\n\t\t\t\t\t\t\t\t\t<a href=\"post.html\" title=\"Image Title\"><img src=\"img/img1.jpg\" alt=\"\" class=\"img-responsive img-rounded\"></a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t<div class=\"_lastPicturesRow\">\n\t\t\t\t\t\t\t\t<div class=\"_lastPicturesImage images_1_of_4\">\n\t\t\t\t\t\t\t\t\t<a href=\"post.html\" title=\"Image Title\"><img src=\"img/img1.jpg\" alt=\"\" class=\"img-responsive img-rounded\"></a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"_lastPicturesImage images_1_of_4\">\n\t\t\t\t\t\t\t\t\t<a href=\"post.html\" title=\"Image Title\"><img src=\"img/img1.jpg\" alt=\"\" class=\"img-responsive img-rounded\"></a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"_lastPicturesImage images_1_of_4\">\n\t\t\t\t\t\t\t\t\t<a href=\"post.html\" title=\"Image Title\"><img src=\"img/img1.jpg\" alt=\"\" class=\"img-responsive img-rounded\"></a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"_lastPicturesImage images_1_of_4\">\n\t\t\t\t\t\t\t\t\t<a href=\"post.html\" title=\"Image Title\"><img src=\"img/img1.jpg\" alt=\"\" class=\"img-responsive img-rounded\"></a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\t\t\t\t\t\t\n\t\t\t\t\t\t\t<div class=\"_lastPicturesRow\">\n\t\t\t\t\t\t\t\t<div class=\"_lastPicturesImage images_1_of_4\">\n\t\t\t\t\t\t\t\t\t<a href=\"post.html\" title=\"Image Title\"><img src=\"img/img1.jpg\" alt=\"\" class=\"img-responsive img-rounded\"></a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"_lastPicturesImage images_1_of_4\">\n\t\t\t\t\t\t\t\t\t<a href=\"post.html\" title=\"Image Title\"><img src=\"img/img1.jpg\" alt=\"\" class=\"img-responsive img-rounded\"></a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"_lastPicturesImage images_1_of_4\">\n\t\t\t\t\t\t\t\t\t<a href=\"post.html\" title=\"Image Title\"><img src=\"img/img1.jpg\" alt=\"\" class=\"img-responsive img-rounded\"></a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"_lastPicturesImage images_1_of_4\">\n\t\t\t\t\t\t\t\t\t<a href=\"post.html\" title=\"Image Title\"><img src=\"img/img1.jpg\" alt=\"\" class=\"img-responsive img-rounded\"></a>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>",
+			"single.html",
+			"img",
+			"single",
+			"single.html",
+			"\t\n",
+			"border",
+			"grid_1_of_4",
+			"section group",
+			"_commentXL",
+			"\n\t",
+			"body",
+			"imgback",
+			"img",
+			".view",
+			"previewXL",
+			".box1",
+			"previewPost",
+			"active",
+			".navbar-default",
+			"contact.ht",
+			"min",
+			"form-control",
+			"card-group",
+			"group",
+			"}\n",
+			"F39C12",
+			"009688",
+			"form-control",
+			"user-small-img",
+			"_preview-content-",
+			"<h5><a href=\"#\">Niki Postingan Sing Kepisan Njeh, Perdana Ngoten</a></h5>",
+			"center",
+			"content-title",
+			" _boxDebug",
+			"accordion",
+			"btn-social-icon",
+			"_boxDebug",
+			"footer",
+			"responsive",
+			"_archivePost",
+			"navigation",
+			"// ",
+			"h5",
+			"accordion",
+			"radius: 0;",
+			"radius",
+			"radious",
+			"button",
+			"F39C12",
+			"badge-pill ",
+			"accordion",
+			"accordiob",
+			"accordio",
+			"accordion",
+			"/*>>==========================*",
+			"title-widget-sidebar",
+			" box",
+			" box\"",
+			" box",
+			"12",
+			"\n}",
+			"list-inline",
+			"foot",
+			"footer",
+			"sup",
+			"container",
+			"panel panel-body_arch",
+			"title-widget-sidebar",
+			"<button class=\"accordion\" ",
+			"alice",
+			"Child 2",
+			"Child 1",
+			"Parent 5",
+			"Parent 4",
+			"Parent 3",
+			"Parent 2",
+			"Parent 1"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"_boxDebug",
+			"",
+			"post.html",
+			"_lastPicturesImage",
+			"_lastPicturesRow",
+			"_commentXS",
+			"._previewXL-View",
+			"__previewXL-View",
+			"_previewXL",
+			".previewXL",
+			".navbar-inverse",
+			"_preview-",
+			"<h4><a href=\"#\">Niki Postingan Sing Kepisan Njeh, Perdana Ngoten</a></h4>",
+			"",
+			"_mt-20",
+			"badge-pill _ft-10 ",
+			"_titleSection",
+			"\"",
+			"panel-body_arch",
+			"<input class=\"accordion\" ",
+			"programming",
+			"Noviembre",
+			"Diciembre",
+			"2013",
+			"2014",
+			"2015",
+			"2016",
+			"2017"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 29.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "myweb.sublime-project",
+	"replace":
+	{
+		"height": 79.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 259.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

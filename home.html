@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Head -->
+<head>
+	<!-- Metas -->	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Bootsrap 3.3.0 -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-3.3.0.css"> <!--Bootstrap v3.3.0-->
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	<!-- Estilos propios-->
+	<link rel="stylesheet" type="text/css" href="css/blog.css">
+	<!-- Blog title--> 
+	<title>Django Blog v1</title>
+</head>
+
+<!-- Body -->
+<body class="_bgColor0">
+
+	<!-- Head -->
+	<header class="_bgColor1 _ftColor3">
+		<!-- Contenedor para centrar la cabecera -->
+		<div class="container">
+			<!-- Barra superior con brand y usuario -->
+			<div class="row">
+				<div class="hidden-xs col-xs-12 pull-left" >
+					<img class="_logoHeader" src="img/django_header.png"/>
+					<h1>My first Django Web</h1>
+				</div>
+			</div>
+			<!-- Barra de navegación inicial -->
+			<div class="row">
+				<nav class="navbar navbar-inverse _bgColor1" role="navigation">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="buton" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#myNavbar" aria-controls="navbar" aria-expanded="false" aria-label="Menú de Navegación">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand hidden-sm hidden-md hidden-lg hidden-xl" href="#"><img src="img/brand_xs.png" width="200"></a>
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<!-- Menú izquierda: navegación por la web-->
+						<ul class="nav navbar-nav navbar-left">
+							<li class="active"><a class="_ftColor1" href="./home.html">Home</a></li>
+							<li><a href="./contact.html">About</a></li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown">Categories<span class="caret"></span></a>
+								<ul class="dropdown-menu _bgColor1" role="menu">
+									<li><a class="_btnColor4" href="category.html">Programming</a></li>
+									<li><a class="_btnColor4" href="category.html">Raspberry PI</a></li>
+									<li><a class="_btnColor4" href="category.html">Linux</a></li>
+									<li><a class="_btnColor4" href="category.html">SAP</a></li>
+									<li><a class="_btnColor4" href="category.html">Otros</a></li>
+								</ul>
+							</li>
+							<li><a href="./archive.html">Archive</a></li>
+						</ul>
+						<!-- Menú derecha: búsqueda y inicio/cierre sesión-->					
+						<ul class="nav navbar-nav navbar-right">
+							<li>
+								<form class="navbar-form navbar-left" role="search">
+									<div class="input-group form-group-sm">
+										<input type="text" class="form-control form-control-sm" placeholder="Search">
+										<div class="input-group-btn">
+											<button class="btn btn-sm _btnColor3" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+										</div>
+									</div>
+								</form>
+							</li>
+							<li class="dropdown">
+								<a class="dropdown-toggle" data-toggle="dropdown">
+									<span class="glyphicon glyphicon-user"></span>
+									<span> Isma</span>
+									<span class="caret"></span>
+								</a>
+								<ul class="dropdown-menu _bgColor0">
+									<li>
+										<div class="navbar-login col-xs-12 _pt-15 _pb-15">
+											<div class="col-xs-12 _pt-10 _pb-10">
+												<div class="col-xs-4 _pd-0 ">
+													<img src="./img/developer.png" class="_bgColor0 img-responsive img-rounded" width="100%">
+												</div>
+												<div class="col-xs-8 ">
+													<p class="text-left"><strong>Isma Developer</strong></p>
+													<p class="text-left small">ismaelbernal83@gmail.com</p>
+												</div>
+											</div>
+											<div class="col-xs-12 _pd-0">
+												<button class="btn btn-success btn-block btn-sm" href="#connectModal" data-toggle="modal" data-target="#connectModal">
+													<span class="glyphicon glyphicon-log-in"></span> Login
+												</button>
+												<button class="btn btn btn-primary btn-block btn-sm" href="#disconnectModal" data-toggle="modal" data-target="#disconnectModal">
+													<span class="glyphicon glyphicon-log-out"></span> Logout
+												</button>
+											</div>
+										</div>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						<!-- Ventana modal iniciar sesion -->
+						<div class="modal fade" id="connectModal">
+							<div class="modal-dialog ">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+										<h2>Iniciar sesión</h2>
+									</div>
+									<div class="modal-body">
+										<form action="">
+											<div class="form-group">
+												<input class="form-control" type="text" name="username" id="user" placeholder="Username" autofocus required>
+											</div>
+											<div class="form-group">
+												<input class="form-control" type="password" name="passworrd" id="pass" placeholder="Password" required>
+											</div>
+											<div class="form-group">
+												<a href="#forgotPasswordModal" data-toggle="modal" data-target="#forgotPasswordModal" class="btn btn-info btn-block">Forgot password?</a>
+											</div>
+											<div class="checkbox">
+												<label><input type="checkbox" value="remember" id="remember">Remember me</label>
+											</div>
+											<div class="form-group form-group-inline" style="text-align: right;">
+												<button class="btn btn-success" type="submit">Login</button>
+												<a href="#" data-dismiss="modal" class="btn btn-primary">Cancelar</a>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Ventana modal cerrar sesion -->
+						<div class="modal fade" id="disconnectModal">
+							<div class="modal-dialog ">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+										<h2>Cerrar sesión</h2>
+									</div>
+									<div class="modal-body">
+										<p>¿Está seguro de que desea desconectar la sesión?</p>
+									</div>
+									<div class="modal-footer">
+										<button class="btn btn-success" type="submit">Desconectar</button>
+										<a href="#" data-dismiss="modal" class="btn btn-primary">Cancelar</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Ventana modal recordar password -->
+						<div class="modal fade" id="forgotPasswordModal">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+										<h2>Resetear password</h2>
+									</div>
+									<div class="modal-body">
+										<form action="">
+											<div class="form-group">
+												<input class="form-control" type="text" name="mailaddress" id="mailaddress" placeholder="Your email address..." autofocus required>
+												<input name="_csrf" id="token" type="hidden" value="aKcseI6i-FGe6_EmdBd2h-p2T3Wfol-Mrpd4">
+												<span class="help-block"><small>Enter the email address you used to sign-up.</small></span>
+											</div>
+											<div class="form-group" style="text-align: right;">
+												<button class="btn btn-success" type="submit">Reset Password</button>
+												<a href="#" data-dismiss="modal" class="btn btn-primary">Cancelar</a>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+	           			</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>	
+
+	<!-- Bloque principal -->
+	<main>
+		<div class="container _bgColor0">
+			<!-- Carousel (sólo visible en "sm" en adelante-->
+			<section class="row">
+				<div class="hidden-xs col-sm-12">
+					<div class="carousel slide" id="IdCarousel" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#IdCarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#IdCarousel" data-slide-to="1"></li>			
+							<li data-target="#IdCarousel" data-slide-to="2"></li>		
+						</ol>
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img src="img/carousel1.jpg" alt="imagen_1" width="100%" height="100%">
+								<div class="container">
+									<div class="carousel-caption d-block">
+										<h3>Wild nature</h3>
+										<p>Nature is always so much fun!</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<img src="img/carousel2.jpg" alt="imagen_1">
+								<div class="container">
+									<div class="carousel-caption d-block">
+										<h3>Big cities</h3>
+										<p>Get Lost in the skyline</p>
+									</div>
+								</div>
+							</div>
+							<div class="item">
+								<img src="img/carousel3.jpg" alt="imagen_1">
+								<div class="container">
+									<div class="carousel-caption d-block">
+										<h3 class="text-dark">Sanfrancisco</h3>
+										<p class="text-dark">Welcome to the city of love!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a class="left carousel-control" href="#IdCarousel" role="button" data-slide="prev">
+							<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#IdCarousel" role="button" data-slide="next">
+							<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- Sección -->
+			<section class="row">
+				<!-- Posts en portada  (main)-->
+				<div class="col-xs-12 _mt-20 col-md-8 pull-left _pr-0 _pl-0">
+					<div class="col-xs-12">
+						<h2 class="_titleSection">RECENT POSTS</h2>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<aside>
+							<div class="_preview">
+								<div class="_preview-title _bgColor0">
+									<div class="_preview-title_img">
+										<figure><img src="img/thumbnail.jpg" class="img-responsive" width="100%"></figure>
+									</div>
+									<h4><a class="_ftColor1 _ftHColor3" href="#">Niki Postingan Sing Kepisan Njeh, Perdana Ngoten</a></h4>
+								</div>
+								<div class="_preview-footer _bgColor1">
+									<img class="_bgColor0" src="img/developer.png">
+									<span><a class="_ftColor0" href="#" data-toggle="tooltip" data-placement="left" title="Author">Isma</a></span>
+									<span class="pull-right">
+										<a class="_ftColor0" href="#" data-toggle="tooltip" data-placement="left" title="Comments"><i class="fa fa-comments"></i> 30</a>
+										<a class="_ftColor0" href="#" data-toggle="tooltip" data-placement="right" title="Loved"><i class="fa fa-heart"></i> 20</a>                  
+									</span>
+									<div class="_preview-user _bgColor1">
+										<img src="img/developer.png" class="img-responsive">
+										<h3 class="_ftColor0">Isma</h3>
+										<p class="_ftColor0">Developer and Geek</p>
+										<div class="_preview-user-sn">
+											<a href="#"><i class="fa fa-facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i></a>
+											<a href="#"><i class="fa fa-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i></a>
+											<a href="#"><i class="fa fa-google-plus" data-toggle="tooltip" data-placement="bottom" title="Google Plus"></i></a>
+											<a href="#"><i class="fa fa-youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"></i></a>
+											<a href="#"><i class="fa fa-github" data-toggle="tooltip" data-placement="bottom" title="Github"></i></a>             
+										</div>
+									</div>
+								</div>
+							</div>
+						</aside>
+					</div>				
+					<div class="col-xs-12 col-sm-4">
+						<aside>
+							<div class="_preview">
+								<div class="_preview-title _bgColor0">
+									<div class="_preview-title_img">
+										<figure><img src="img/thumbnail.jpg" class="img-responsive" width="100%"></figure>
+									</div>
+									<h4><a class="_ftColor1 _ftHColor3" href="#">Niki Postingan Sing Kepisan Njeh, Perdana Ngoten</a></h4>
+								</div>
+								<div class="_preview-footer _bgColor1">
+									<img class="_bgColor0" src="img/developer.png">
+									<span><a class="_ftColor0" href="#" data-toggle="tooltip" data-placement="left" title="Author">Isma</a></span>
+									<span class="pull-right">
+										<a class="_ftColor0" href="#" data-toggle="tooltip" data-placement="left" title="Comments"><i class="fa fa-comments"></i> 30</a>
+										<a class="_ftColor0" href="#" data-toggle="tooltip" data-placement="right" title="Loved"><i class="fa fa-heart"></i> 20</a>                  
+									</span>
+									<div class="_preview-user _bgColor1">
+										<img src="img/developer.png" class="img-responsive">
+										<h3 class="_ftColor0">Isma</h3>
+										<p class="_ftColor0">Developer and Geek</p>
+										<div class="_preview-user-sn">
+											<a href="#"><i class="fa fa-facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i></a>
+											<a href="#"><i class="fa fa-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i></a>
+											<a href="#"><i class="fa fa-google-plus" data-toggle="tooltip" data-placement="bottom" title="Google Plus"></i></a>
+											<a href="#"><i class="fa fa-youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"></i></a>
+											<a href="#"><i class="fa fa-github" data-toggle="tooltip" data-placement="bottom" title="Github"></i></a>             
+										</div>
+									</div>
+								</div>
+							</div>
+						</aside>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<aside>
+							<div class="_preview">
+								<div class="_preview-title _bgColor0">
+									<div class="_preview-title_img">
+										<figure><img src="img/thumbnail.jpg" class="img-responsive" width="100%"></figure>
+									</div>
+									<h4><a class="_ftColor1 _ftHColor3" href="#">Niki Postingan Sing Kepisan Njeh, Perdana Ngoten</a></h4>
+								</div>
+								<div class="_preview-footer _bgColor1">
+									<img class="_bgColor0" src="img/developer.png">
+									<span><a class="_ftColor0" href="#" data-toggle="tooltip" data-placement="left" title="Author">Isma</a></span>
+									<span class="pull-right">
+										<a class="_ftColor0" href="#" data-toggle="tooltip" data-placement="left" title="Comments"><i class="fa fa-comments"></i> 30</a>
+										<a class="_ftColor0" href="#" data-toggle="tooltip" data-placement="right" title="Loved"><i class="fa fa-heart"></i> 20</a>                  
+									</span>
+									<div class="_preview-user _bgColor1">
+										<img src="img/developer.png" class="img-responsive">
+										<h3 class="_ftColor0">Isma</h3>
+										<p class="_ftColor0">Developer and Geek</p>
+										<div class="_preview-user-sn">
+											<a href="#"><i class="fa fa-facebook" data-toggle="tooltip" data-placement="bottom" title="Facebook"></i></a>
+											<a href="#"><i class="fa fa-twitter" data-toggle="tooltip" data-placement="bottom" title="Twitter"></i></a>
+											<a href="#"><i class="fa fa-google-plus" data-toggle="tooltip" data-placement="bottom" title="Google Plus"></i></a>
+											<a href="#"><i class="fa fa-youtube" data-toggle="tooltip" data-placement="bottom" title="Youtube"></i></a>
+											<a href="#"><i class="fa fa-github" data-toggle="tooltip" data-placement="bottom" title="Github"></i></a>             
+										</div>
+									</div>
+								</div>
+							</div>
+						</aside>
+					</div>				
+					<div class="col-xs-12 _mt-30">
+						<h2 class="_titleSection">OTHER</h2>
+					</div>
+					<div class="col-xs-12 _mt-10">
+						<div class="_previewXL">
+							<div class="_previewXL-Title">
+								<h3><a href="post.html">Making it look like readable English. Many desktop packages and web page</a></h3>
+								<span>By Kieth Deviec- 2 hours ago<a href="post.html"><span class="_previewXL-comments">8 Comments</span></a></span> 
+							</div>
+							<div class="_previewXL-Body">
+								<a href="post.html"><img src="img/img1.jpg" class="img-rounded" width="200px"></a>
+								<p>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
+								making it look like readable English. Many desktop publishing packages and web page editorsLorem Ipsum is that it
+								has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like
+								readable English. Many desktop publishing packages and web page editors. Lorem ipsum dolor sit amet, consectetur adipisicing
+								elit. Nobis odio harum vero maxime, tempore, beatae nemo illo velit natus magnam quisquam laudantium unde placeat inventore
+								accusantium quia ipsam iure veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ipsum optio provident
+								itaque autem sed accusantium culpa aspernatur reprehenderit, dolor cupiditate quod aperiam rerum veritatis ea at recusandae,
+								veniam facere! <span><a href="post.html"> leer mas...</a></span></p>
+							</div>
+							<div class="_previewXL-Footer">
+								<span class="label label-info">programming</span>
+								<span class="label label-primary">linux</span>
+								<span class="label label-success">raspberry pi</span>
+							</div>
+						</div>
+						<div class="_previewXL">
+							<div class="_previewXL-Title">
+								<h3><a href="post.html">Making it look like readable English. Many desktop packages and web page</a></h3>
+								<span>By Kieth Deviec- 2 hours ago<a href="post.html"><span class="_previewXL-comments">8 Comments</span></a></span> 
+							</div>
+							<div class="_previewXL-Body">
+								<a href="post.html"><img src="img/img1.jpg" class="img-rounded" width="200px"></a>
+								<p>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
+									making it look like readable English. Many desktop publishing packages and web page editorsLorem Ipsum is that it
+									has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like
+									readable English. Many desktop publishing packages and web page editors. Lorem ipsum dolor sit amet, consectetur adipisicing
+									elit. Nobis odio harum vero maxime, tempore, beatae nemo illo velit natus magnam quisquam laudantium unde placeat inventore
+									accusantium quia ipsam iure veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ipsum optio provident
+									itaque autem sed accusantium culpa aspernatur reprehenderit, dolor cupiditate quod aperiam rerum veritatis ea at recusandae,
+									veniam facere! <span><a href="post.html"> leer mas...</a></span></p>
+							</div>
+							<div class="_previewXL-Footer">
+								<span class="label label-info">programming</span>
+								<span class="label label-primary">linux</span>
+								<span class="label label-success">raspberry pi</span>
+							</div>
+						</div>
+						<div class="_previewXL">
+							<div class="_previewXL-Title">
+								<h3><a href="post.html">Making it look like readable English. Many desktop packages and web page</a></h3>
+								<span>By Kieth Deviec- 2 hours ago<a href="post.html"><span class="_previewXL-comments">8 Comments</span></a></span> 
+							</div>
+							<div class="_previewXL-Body">
+								<a href="post.html"><img src="img/img1.jpg" class="img-rounded" width="200px"></a>
+								<p>Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here',
+									making it look like readable English. Many desktop publishing packages and web page editorsLorem Ipsum is that it
+									has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like
+									readable English. Many desktop publishing packages and web page editors. Lorem ipsum dolor sit amet, consectetur adipisicing
+									elit. Nobis odio harum vero maxime, tempore, beatae nemo illo velit natus magnam quisquam laudantium unde placeat inventore
+									accusantium quia ipsam iure veritatis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ipsum optio provident
+									itaque autem sed accusantium culpa aspernatur reprehenderit, dolor cupiditate quod aperiam rerum veritatis ea at recusandae,
+									veniam facere! <span><a href="post.html"> leer mas...</a></span></p>
+							</div>
+							<div class="_previewXL-Footer">
+								<span class="label label-info">programming</span>
+								<span class="label label-primary">linux</span>
+								<span class="label label-success">raspberry pi</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<nav aria-label="Page navigation">
+							<ul class="pagination _postPagination">
+								<li><button class="btn _btnColor1 _pagination" href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></button></li>
+								<li><button class="btn _btnColor1 _pagination active" href="#">1</button></li>
+								<li><button class="btn _btnColor1 _pagination" href="#">2</button></li>
+								<li><button class="btn _btnColor1 _pagination" href="#">3</button></li>
+								<li><button class="btn _btnColor1 _pagination" href="#">4</button></li>
+								<li><button class="btn _btnColor1 _pagination" href="#">5</button></li>
+								<li><button class="btn _btnColor1 _pagination" href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></button></li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+				<!-- Sidebar derecha-->
+				<div class="col-xs-12 col-md-4 pull-right _pl-0 _pr-0">
+					<!-- Categorias-->
+					<div class="col-xs-12 _mt-20">
+						<h2 class="_titleSection">CATEGORIES</h2>
+						<div class="panel-group" id="accordion">
+							<div class="panel">
+								<button class="categories _btnColor2 _pd-18 _w-100 _ft-15">Programing</button>
+							</div>
+							<div class="panel">
+								<button class="categories _btnColor2 _pd-18 _w-100 _ft-15">Raspberry PI</button>
+							</div>
+							<div class="panel">
+								<button class="categories _btnColor2 _pd-18 _w-100 _ft-15">Linux</button>
+							</div>
+							<div class="panel">
+								<button class="categories _btnColor2 _pd-18 _w-100 _ft-15">SAP</button>
+							</div>
+							<div class="panel">
+								<button class="categories _btnColor2 _pd-18 _w-100 _ft-15">Otros</button>
+							</div> 
+						</div>
+					</div>
+					<!-- Popular posts-->
+					<div class="col-xs-12 _mt-20">
+						<h2 class="_titleSection">POPULAR POSTS</h2>
+						<div class="_previewXSGroup">
+							<div class="_previewXS">
+								<img src="img/img1.jpg" alt="thumbnail" class="img-rounded">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit ipsum dolor sit amet
+									<a href="post.html">[...]</a>
+								</p>
+							</div>
+							<div class="_previewXS">
+								<img src="img/img1.jpg" alt="thumbnail" class="img-rounded">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit ipsum dolor sit amet
+									<a href="post.html">[...]</a>
+								</p>
+							</div>
+							<div class="_previewXS">
+								<img src="img/img1.jpg" alt="thumbnail" class="img-rounded">
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit ipsum dolor sit amet
+									<a href="post.html">[...]</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Last comments-->
+					<div class="col-xs-12 _mt-20">
+						<h2 class="_titleSection">LAST COMMENTS</h2>
+						<div class="_lastCommentsXS">
+							<div class="_commentXS">
+								<p><span>admin</span> commented on</p>
+								<h4><a href="#">Lorem ipsum dolor sit dolor more normal!</a></h4>
+								<p>June 25th, 2013</p>
+							</div>
+							<div class="_commentXS">
+								<p><span>admin</span> commented on</p>
+								<h4><a href="#">Lorem ipsum dolor sit dolor more normal!</a></h4>
+								<p>June 25th, 2013</p>
+							</div>		
+							<div class="_commentXS">
+								<p><span>admin</span> commented on</p>
+								<h4><a href="#">Lorem ipsum dolor sit dolor more normal!</a></h4>
+								<p>June 25th, 2013</p>
+							</div>
+						</div>
+					</div>
+					<!-- Last pictures -->
+					<div class="col-xs-12 _mt-20">
+						<h2 class="_titleSection">LAST PICTURES</h2>
+						<div class="_lastPictures">
+							<div class="_lastPicturesRow">
+								<div class="_lastPicturesImage images_1_of_4"> <a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+								<div class="_lastPicturesImage images_1_of_4">
+									<a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+								<div class="_lastPicturesImage images_1_of_4">
+									<a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+								<div class="_lastPicturesImage images_1_of_4">
+									<a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+							</div>
+							<div class="_lastPicturesRow">
+								<div class="_lastPicturesImage images_1_of_4">
+									<a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+								<div class="_lastPicturesImage images_1_of_4">
+									<a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+								<div class="_lastPicturesImage images_1_of_4">
+									<a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+								<div class="_lastPicturesImage images_1_of_4">
+									<a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+							</div>						
+							<div class="_lastPicturesRow">
+								<div class="_lastPicturesImage images_1_of_4">
+									<a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+								<div class="_lastPicturesImage images_1_of_4">
+									<a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+								<div class="_lastPicturesImage images_1_of_4">
+									<a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+								<div class="_lastPicturesImage images_1_of_4">
+									<a href="post.html" title="Image Title"><img src="img/img1.jpg" alt="" class="img-responsive img-rounded"></a>
+								</div>
+							</div>
+						</div>		
+					</div>
+				</div> 
+			</section>
+		</div>
+	</main>
+
+	<!-- Footer -->
+	<footer class="_bgColor1 _ftColor0T">
+		<!-- Barra superior y de share - Solo visible con varnab completa -->
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-lg-5 right-border _pr-sm-20">
+					<div class="footer-about">
+						<div class="col-xs-12 _pl-0 _pr-0">
+							<h2 class="footer-title">About Me</h2>
+							<p class="_textJustify">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+						</div>
+						<div class="single col-xs-12 _pl-0 _pr-0 _mt-5">
+							<h6>Desarrollado por:
+								<p class="_ml-10 _mt-5">
+									<i class="fa fa-envelope"></i>
+									<a href="#" title="">Ismael</a> - info@example.com
+								</p>
+							</h6>					
+						</div>
+						<div class="single col-xs-12 col-sm-5 _pl-0 _pr-0 _mt-5">
+							<h6>Follow:</h6>
+							<ul class="list-inline _mt-5">
+								<li class="list-inline-item"><a class="btn btn-social-icon btn-lg btn-twitter" href="http://www.twitter.com"><span class="fa fa-twitter"></span></a></li>
+								<li class="list-inline-item"><a class="btn btn-social-icon btn-lg btn-github" href="http://www.github.com"><span class="fa fa-github"></span></a></li>
+							</ul>
+						</div>
+						<div class="single col-xs-12 col-sm-7 _pl-0 _pr-0 _mt-5">
+							<h6>Share:</h6>
+							<ul class="list-inline _mt-5">
+								<li class="list-inline-item"><a class="btn btn-social-icon btn-lg btn-twitter" href="http://www.twitter.com"><span class="fa fa-twitter"></span></a></li>
+								<li class="list-inline-item"><a class="btn btn-social-icon btn-lg btn-facebook" href="http://www.facebook.com"><span class="fa fa-facebook"></span></a></li>
+								<li class="list-inline-item"><a class="btn btn-social-icon btn-lg btn-linkedin" href="http://www.linkedin.com"><span class="fa fa-linkedin"></span></a></li>
+								<li class="list-inline-item"><a class="btn btn-social-icon btn-lg btn-instagram" href="http://www.linkedin.com"><span class="fa fa-instagram"></span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-lg-3 right-border _pl-sm-20 _pr-sm-20">
+					<div class="footer-about">
+						<div class="col-xs-12 _pl-0 _pr-0">
+							<h2 class="footer-title">Powered By</h2>
+							<div id="powered" class="footer-powered">
+								<img src="img/HTML5.png" class="img-rounded" alt="powered_by">
+								<img src="img/css3.png" class="img-rounded" alt="powered_by">
+								<img src="img/bootstrap3.png" class="img-rounded" alt="powered_by">
+								<img src="img/python.jpg" class="img-rounded" alt="powered_by">
+								<img src="img/django.png" class="img-rounded" alt="powered_by">
+							</div>
+						</div>
+						<div class="col-xs-12 _pl-0 _pr-0">
+							<div class="navigation">
+								<h2 class="footer-title">Navigation</h2>
+								<ul class="list-unstyled">
+									<li><a href="./home.html" title="">Home</a></li>
+									<li><a href="./contact.html" title="">Contact</a></li>
+									<li><a href="./categories.html" title="">Categories</a></li>
+									<li><a href="./archive.html" title="">Archive</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-lg-4 _pl-sm-20">
+					<div class="footer-about">
+						<div class="col-xs-12 _pb-20 _pl-0 _pr-0">
+							<h2 class="footer-title">Newsletter</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit..</p>
+							<div class="input-group">
+								<span class="input-group-addon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
+								<input id="email" type="text" class="form-control" name="email" placeholder="Email">
+							</div>
+							<button type="button" class="btn _btnColor3 _mt-15 _noRadious">Subscribe</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</footer>
+
+	<!-- JQuery y Bootstrap -->
+	<script src="js/jquery-1.11.1.js"></script>
+	<script src="js/bootstrap-3.3.0.js"></script>
+	<!-- My scripts -->
+	<script>
+		jQuery(window).resize(function() {
+   			var divWidth = $('#powered').width(); 
+    		$('#powered').css('height', divWidth/6);
+		});  
+
+		$('.carousel-indicators  li').on('mouseover',function() {
+			$(this).trigger('click');
+		})
+
+		jQuery(document).ready(function() {
+		
+			var divWidth = $('#powered').width(); 
+    		$('#powered').css('height', divWidth/6);
+    		
+			function close_accordion_section() {
+				jQuery('.accordion').removeClass('active');
+			}
+
+			jQuery('.accordion').click(function(e) {
+				// Grab current anchor value
+				var currentAttrValue = jQuery(this).attr('href');
+
+				if(jQuery(e.target).is('.active')) {
+					close_accordion_section();
+				}else {
+					close_accordion_section();
+					// Add active class to section title
+					jQuery(this).addClass('active');
+				}
+				e.preventDefault();
+			});
+		});
+	</script>
+</body>
+</html>
